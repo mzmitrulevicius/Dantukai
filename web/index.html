@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="mano_dantukai">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <title>mano_dantukai</title>
+  <link rel="manifest" href="manifest.json">
+  <script>const serviceWorkerVersion = null;</script>
+  <script src="flutter.js" defer></script>
+  <!-- Firebase SDK v9+ modulinis importavimas -->
+  <script type="module">
+    // Importuojame Firebase modulius
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js';
+    import { getAuth } from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js';
+    import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js';
+
+    // Jūsų Firebase projekto konfigūracijaa
+    const firebaseConfig = {
+      apiKey: "AIzaSyCUp3boZPflOu3b5reGrZ4KpJTxTzceTh0",
+      authDomain: "dantukai-9fd66.firebaseapp.com",
+      projectId: "dantukai-9fd66",
+      storageBucket: "dantukai-9fd66.appspot.com",
+      messagingSenderId: "243103591958",
+      appId: "1:243103591958:web:de6c1f23bde2591d254f37",
+      measurementId: "G-3WBQ194RP5"
+    };
+
+    // Inicializuojame Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+  </script>
+</head>
+<body>
+  <script>
+    window.addEventListener('load', () => {
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: { serviceWorkerVersion },
+        onEntrypointLoaded: (engineInitializer) => {
+          engineInitializer.initializeEngine().then((appRunner) => {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

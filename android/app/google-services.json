@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "243103591958",
+    "project_id": "dantukai-9fd66",
+    "storage_bucket": "dantukai-9fd66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243103591958:android:5bf1648849f51b5c254f37",
+        "android_client_info": {
+          "package_name": "com.example.mano_dantukai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM0hTbsjii_WlZ5Xr2jQ2cbcJ2Z5yXkYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
